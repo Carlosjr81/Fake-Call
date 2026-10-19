@@ -1,0 +1,14 @@
+# Exercised with Python 3.12 and the pinned upstream OpenVoice commit.
+# setup-openvoice.sh installs torch from its official CPU index.
+-r requirements-phone.txt
+numpy==1.26.4
+librosa==0.10.2.post1
+soundfile==0.12.1
+eng_to_ipa==0.0.2
+inflect==7.0.0
+unidecode==1.3.7
+pypinyin==0.50.0
+cn2an==0.5.22
+jieba==0.42.1
+resampy==0.4.3
+huggingface-hub==0.36.2

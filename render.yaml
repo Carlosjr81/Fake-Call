@@ -1,0 +1,19 @@
+# Foreground calls with effects processed on Android. Does not load OpenVoice.
+services:
+  - type: web
+    name: jarvis-voice-relay
+    runtime: docker
+    plan: free
+    dockerfilePath: ./server/Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: JARVIS_TOKEN
+        generateValue: true
+      - key: JARVIS_BIND
+        value: 0.0.0.0
+      - key: JARVIS_DATA
+        value: /tmp/jarvis-voice-data
+      - key: ENABLE_TELEPHONY
+        value: 'false'

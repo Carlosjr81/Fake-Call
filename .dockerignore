@@ -1,0 +1,6 @@
+**
+!server/
+!server/**
+server/data/
+server/__pycache__/
+server/*.env

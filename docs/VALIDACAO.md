@@ -25,7 +25,7 @@
 - Credenciais, saldo, custos, número e permissões de telefonia; portabilidade/encaminhamento do número móvel atual.
 - Uso em segundo plano, notificações de chamada e histórico da operadora: não implementados.
 
-Não houve publicação na Play Store nem alteração no Treino Livre. O código foi preparado para publicação no repositório próprio Carlosjr81/Jarvis-Voice, com workflow de compilação e verificação.
+Não houve publicação na Play Store nem alteração no Treino Livre. O código foi preparado para publicação no repositório próprio Carlosjr81/Fake-Call, com workflow de compilação e verificação.
 
 ## Revisão do servidor 0.2.0
 
@@ -33,7 +33,7 @@ Não houve publicação na Play Store nem alteração no Treino Livre. O código
 - OpenVoice V2 carregado de checkpoint oficial fixado; conversão real executada com WAV mono 16 kHz. Confira [OPENVOICE.md](OPENVOICE.md).
 - O adaptador reutiliza embeddings de referências sem extrair novamente o timbre alvo em cada gravação. As inferências permanecem serializadas.
 - `render.yaml` validado contra o esquema JSON público atual. A validação de plataforma e o build do Docker não foram executados.
-- Render conectado e workspace My Workspace identificado pelo usuário. Nenhum serviço foi criado. O repositório próprio Carlosjr81/Jarvis-Voice foi criado para esta implantação.
+- Render conectado e workspace My Workspace identificado pelo usuário. Nenhum serviço foi criado. O repositório próprio Carlosjr81/Fake-Call foi criado para esta implantação.
 - O APK Android permanece o binário compilado e assinado da entrega anterior. A compilação Android também passou nesta sessão antes da seleção do workspace; esse build temporário não substitui o APK entregue.
 
 - A suíte completa atual tem 15 testes: os 14 testes de integração anteriores e um teste do cache que verifica reutilização, invalidação, isolamento e limite de memória. Todos passaram.

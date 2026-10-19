@@ -1,4 +1,4 @@
-# Servidor Jarvis Voice no Render
+# Servidor Fake Call no Render
 
 ## Serviço implantado
 
@@ -19,7 +19,7 @@ O plano gratuito tem suspensão por inatividade, limites de uso e armazenamento 
 
 ## Publicar
 
-1. Coloque o conteúdo deste projeto na raiz de um repositório próprio no GitHub. O Render precisa alcançar esse repositório. O repositório próprio foi criado em https://github.com/Carlosjr81/Jarvis-Voice ; Treino Livre e Jarvis Studio Editor são projetos distintos.
+1. Coloque o conteúdo deste projeto na raiz de um repositório próprio no GitHub. O Render precisa alcançar esse repositório. O repositório próprio foi criado em https://github.com/Carlosjr81/Fake-Call ; Treino Livre e Jarvis Studio Editor são projetos distintos.
 2. No workspace `My Workspace` confirmado pelo usuário, crie o Blueprint a partir desse repositório e confira que ele propõe apenas o serviço `jarvis-voice-relay` no plano `free`.
 3. Após a implantação chegar a `live`, verifique `/healthz`, depois `/api/health` com a chave privada. Informe origem HTTPS e chave no Android. Não publique a chave.
 4. Teste duas instalações em primeiro plano e na mesma sala; escolha voz/ambiente e aceite dos dois lados. Na rota entre apps, o bip confirma envio do áudio atual, não reprodução física no outro aparelho.

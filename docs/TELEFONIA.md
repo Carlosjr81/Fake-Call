@@ -2,7 +2,7 @@
 
 ## O caminho implementado
 
-Microfone do Android → efeito local e ambiente → WSS → servidor Jarvis → Media Streams da Twilio → número telefônico.
+Microfone do Android → efeito local e ambiente → WSS → servidor Fake Call → Media Streams da Twilio → número telefônico.
 
 A voz da outra pessoa retorna pelo mesmo caminho. A ponte converte PCM16 mono 16 kHz do app em μ-law 8 kHz da telefonia. Essa redução limita a faixa de áudio; não é som de estúdio.
 

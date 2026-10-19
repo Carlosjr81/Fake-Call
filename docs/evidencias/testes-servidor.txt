@@ -1,0 +1,25 @@
+test_incoming_requires_waiting_app_and_valid_provider (test_phone.PhoneTests.test_incoming_requires_waiting_app_and_valid_provider) ... /workspace/scratch/a8f6be3ec799/JarvisVoice/server/app.py:243: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['state'] = State(token, data_dir, engine)
+/workspace/scratch/a8f6be3ec799/JarvisVoice/server/phone.py:239: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  gateway=PhoneGateway(app['state'],config);app['phone']=gateway
+ok
+test_no_answer_status_releases_room (test_phone.PhoneTests.test_no_answer_status_releases_room) ... ok
+test_outgoing_audio_in_both_directions_and_hangup (test_phone.PhoneTests.test_outgoing_audio_in_both_directions_and_hangup) ... ok
+test_phone_disabled_by_default (test_phone.PhoneTests.test_phone_disabled_by_default) ... ok
+test_ready_beep_waits_for_processed_version_and_provider_playback (test_phone.PhoneTests.test_ready_beep_waits_for_processed_version_and_provider_playback) ... ok
+test_reject_unlisted_number_and_missing_signature (test_phone.PhoneTests.test_reject_unlisted_number_and_missing_signature) ... ok
+test_websocket_invalid_signature_rejected (test_phone.PhoneTests.test_websocket_invalid_signature_rejected) ... ok
+test_auth_health_and_truthful_missing_model (test_server.ServerTests.test_auth_health_and_truthful_missing_model) ... ok
+test_bad_audio_and_traversal (test_server.ServerTests.test_bad_audio_and_traversal) ... ok
+test_bidirectional_audio_requires_both_accept_and_room_capacity (test_server.ServerTests.test_bidirectional_audio_requires_both_accept_and_room_capacity) ... ok
+test_conversion_contract_with_explicit_fake_engine (test_server.ServerTests.test_conversion_contract_with_explicit_fake_engine) ... ok
+test_invalid_frame_is_rejected (test_server.ServerTests.test_invalid_frame_is_rejected) ... ok
+test_reference_validation_list_and_deletion (test_server.ServerTests.test_reference_validation_list_and_deletion) ... ok
+test_room_isolation (test_server.ServerTests.test_room_isolation) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.216s
+
+OK

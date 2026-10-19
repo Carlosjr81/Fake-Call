@@ -1,0 +1,9 @@
+PASS original preserves PCM within 1 LSB
+PASS streaming pitch preset 1 peak=176.0
+PASS streaming pitch preset 2 peak=270.0
+PASS imported ambience loops with gain
+PASS saturation prevents sample wrap-around
+PASS WAV PCM16 round trip
+PASS malformed WAV chunk rejected
+PASS stereo 48k downmix and resampling
+8 meaningful audio checks passed

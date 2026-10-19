@@ -1,0 +1,19 @@
+{
+  "server": "https://jarvis-voice-relay.onrender.com",
+  "readiness": "passed",
+  "unauthenticated_api_denied": true,
+  "authenticated_health": {
+    "version": "0.2.0",
+    "engine_ready": false,
+    "conversion": "recordings_only",
+    "calls": "app_to_app_foreground",
+    "carrier_audio": false,
+    "phone_gateway_ready": false
+  },
+  "two_client_bidirectional_pcm": "passed",
+  "stale_audio_discarded": true,
+  "current_version_ready": "passed",
+  "forward_and_confirmation_seconds": 0.077,
+  "phone_call_tested": false,
+  "android_device_tested": false
+}

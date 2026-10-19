@@ -1,0 +1,26 @@
+{
+  "rea_package_version": "4.1.0",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npx",
+    "-y",
+    "rea-agents@4.1.0",
+    "analyze-javascript-application",
+    "/workspace/scratch/a8f6be3ec799/research/treino-transport",
+    "--json"
+  ],
+  "runtime_probe": {
+    "status": "observed",
+    "platform": "linux",
+    "pid": 6,
+    "exec_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "proc_pid": 10547
+  },
+  "compatibility_reason": "linux_pid_procfs_mismatch_static_only",
+  "started_at": "2026-10-19T01:59:51.742158+00:00",
+  "finished_at": "2026-10-19T02:00:05.755341+00:00",
+  "status": "completed",
+  "exit_code": 0,
+  "output": "/workspace/scratch/a8f6be3ec799/research/rea-treino.json",
+  "output_sha256": "3bcb39b66628abff97dcae3e0d355f127fb80c155aa015e0136b9ac7710db65c",
+  "stderr": "/workspace/scratch/a8f6be3ec799/research/rea-treino.json.stderr.txt"
+}

@@ -1,4 +1,4 @@
-# Jarvis Voice — Android 0.1.0 / servidor 0.2.0
+# Fake Call — Android 0.1.1 / servidor 0.2.0
 
 Aplicativo nativo para efeitos de voz, ambientes, gravações e chamadas pelo próprio app.
 **É uma versão de desenvolvimento. A troca de voz durante ligações do chip não foi implementada.**
@@ -30,7 +30,7 @@ O bip é gerado localmente; o microfone é silenciado por 240 ms para reduzir su
 ## Instalar e testar no Android
 
 1. Instale o APK de desenvolvimento em Android 11 ou superior. Se necessário, permita a instalação pelo aplicativo usado para abrir o arquivo.
-2. Abra **Jarvis Voice → Estúdio** e conceda microfone.
+2. Abra **Fake Call → Estúdio** e conceda microfone.
 3. Escolha efeito e ambiente, toque **Gravar**, fale e toque **Parar e salvar**.
 4. Toque **Ouvir resultado**. **Exportar WAV** abre o seletor de destino do Android.
 5. Para monitorar ao vivo, use fones. O monitoramento fica desligado inicialmente.
@@ -39,7 +39,7 @@ O resultado e a fala original ficam no armazenamento privado do app. A chave do 
 
 ## Servidor
 
-Consulte [SERVIDOR.md](docs/SERVIDOR.md). Há configuração para Render, GitHub Codespaces e servidor Linux próprio. Veja também [RENDER.md](docs/RENDER.md). **Nenhum servidor foi iniciado na sua conta por esta entrega.**
+Consulte [SERVIDOR.md](docs/SERVIDOR.md). Há configuração para Render, GitHub Codespaces e servidor Linux próprio. Veja também [RENDER.md](docs/RENDER.md). **Ponte implantada em https://jarvis-voice-relay.onrender.com, no plano gratuito do Render.** O motor neural e a telefonia permanecem desabilitados nesse serviço. O teste remoto com dois clientes verificou áudio bidirecional e confirmação dos ajustes; não houve teste em aparelho físico.
 
 Para duas pessoas: configure a mesma origem HTTPS, chave e sala em **Chamadas**; ambas entram e tocam **Aceitar chamada**. O app precisa ficar aberto. Sair ou perder o foco de áudio encerra a sessão. Não há notificações de chamadas em segundo plano nesta versão.
 
@@ -76,4 +76,4 @@ O modelo OpenVoice V2 foi carregado e converteu áudio real em teste local. Não
 
 A referência usada foi a referência sintética autorizada de Carlos Jr., recuperada do perfil VoiceStudio. Não é uma nova gravação natural. Depois do aquecimento, 6 s de entrada levaram aproximadamente 2,84–2,96 s para converter. Em uma experiência com embeddings de origem/destino em cache, blocos de 1 s variaram de 0,85 a 2,10 s. Não houve folga estável para conversa contínua. Os dados estão em [OPENVOICE.md](docs/OPENVOICE.md). Clonagem ao vivo não foi habilitada.
 
-O APK é o mesmo binário de desenvolvimento já compilado. As alterações desta revisão estão no servidor, instalador, diagnóstico e configuração de implantação.
+O aplicativo passou a se chamar Fake Call na versão Android 0.1.1. O identificador interno foi mantido para compatibilidade. A compilação de desenvolvimento usa assinatura de teste; exporte gravações importantes antes de substituir uma instalação com assinatura diferente.

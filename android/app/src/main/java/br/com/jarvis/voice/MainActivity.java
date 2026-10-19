@@ -240,7 +240,7 @@ public class MainActivity extends Activity {
           page.setPadding(dp(20), i.top + dp(8), dp(20), i.bottom);
           return w;
         });
-    TextView brand = text("JARVIS  /  VOICE", 13, GREEN);
+    TextView brand = text("FAKE  /  CALL", 13, GREEN);
     brand.setLetterSpacing(.16f);
     page.addView(brand);
     LinearLayout nav = new LinearLayout(this);
@@ -357,7 +357,7 @@ public class MainActivity extends Activity {
     LinearLayout b = box();
     b.addView(text("Servidor de voz", 16, INK));
     serverInput = field(b, "https://voz.seudominio.com", server, false);
-    tokenInput = field(b, "Chave de acesso do Jarvis", token, true);
+    tokenInput = field(b, "Chave de acesso do Fake Call", token, true);
     githubInput = field(b, "Token Codespaces · opcional, porta privada", githubToken, true);
     cloneStatus = text("Motor ainda não verificado", 13, MUTED);
     b.addView(cloneStatus);
@@ -380,13 +380,13 @@ public class MainActivity extends Activity {
   }
 
   private void calls() {
-    title("Chamada pelo Jarvis");
+    title("Chamada pelo Fake Call");
     note(
         "Áudio entre duas pessoas com o app aberto. Efeitos e ambiente do Estúdio são enviados à"
             + " outra pessoa.");
     LinearLayout b = box();
     serverInput = field(b, "https://voz.seudominio.com", server, false);
-    tokenInput = field(b, "Chave de acesso do Jarvis", token, true);
+    tokenInput = field(b, "Chave de acesso do Fake Call", token, true);
     githubInput = field(b, "Token Codespaces · opcional, porta privada", githubToken, true);
     roomInput = field(b, "Código da sala", room, false);
     status = text(inCall ? lastCallState : "DESCONECTADO", 14, GREEN);
@@ -417,7 +417,7 @@ public class MainActivity extends Activity {
     note(
         "Chamadas do chip, WhatsApp e histórico da operadora: não conectados. Usar o app como"
             + " discador padrão não libera a troca de áudio.");
-    title("Histórico do Jarvis");
+    title("Histórico do Fake Call");
     note(getPreferences(0).getString("history", "Nenhuma chamada registrada neste app."));
   }
 
@@ -548,7 +548,7 @@ public class MainActivity extends Activity {
     Intent i = new Intent(Intent.ACTION_CREATE_DOCUMENT);
     i.setType("audio/wav");
     i.addCategory(Intent.CATEGORY_OPENABLE);
-    i.putExtra(Intent.EXTRA_TITLE, "Jarvis-Voice-" + System.currentTimeMillis() + ".wav");
+    i.putExtra(Intent.EXTRA_TITLE, "Fake-Call-" + System.currentTimeMillis() + ".wav");
     startActivityForResult(i, 13);
   }
 
